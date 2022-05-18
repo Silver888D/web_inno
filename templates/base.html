@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/lava.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='sass/main.css')}}">
+    <title>My PC</title>
+</head>
+<body class="container">
+    <div class="navbar">
+      <nav> <ul><li><a href="index.html">PC Overview</a></li>
+        <li><a href="Cpu.html">CPU</a></li>
+        <li><a href="Gpu.html">GPU</a></li>
+        <li><a href="Cooling.html">Cooling</a></li>
+        <li><a href="RSPA.html">RAM, Storage, Power & Accessories</a></li></ul></nav>
+    </div>
+    <div class="content">
+        <div class="title">
+           <h1>My PC</h1> 
+        </div>
+        <div class="accord">
+          <div class="accordion-item"><div class="accordion-item-h" onclick="aClick()">Welcome</div><div class="accordion-item-b">
+            <div class="accordion-item-b-c">Hello!<br> <p>Welcome to my website showcasing my PC, throughout this website you will find pictures, detailed specification and tips/tricks for installing and using the parts involved.</p>
+          </div></div></div>
+            <div class="accordion-item"><div class="accordion-item-h1" onclick="aClick1()">PC Quick Specs</div><div class="accordion-item-b">
+              <div class="accordion-item-b-c">Specs:<br> <p>MSI B550M PRO-VDH WIFI<br>AMD Ryzen 9 3900x<br>Trident Z Royal 16GB 3600Mhz<br>Crucial P2 1TB<br>Corsair H100i RGB Platinum SE<br>Powercolor RX6700XT 12GB Hellhound Spectral White<br>bequiet! Straight Power 11 1200w Platinum<br>Corsair 4000D Airflow White</p>
+            </div></div></div>
+          </div>
+        <div class="carousel">
+            <button class="carousel_button carousel__b-l">
+              <img src="{{url_for('static',filename='assets/arrow-left.svg')}}"></button>
+              <div class="carousel__t-c">
+                <ul class="carousel__t">
+                  <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="{{url_for('static',filename='assets/money.jpg')}}"></li>
+                  <li class="carousel__slide">
+                    <img class="carousel__image" src="{{url_for('static',filename='assets/WW.jpg')}}"></li>
+                  <li class="carousel__slide">
+                    <img class="carousel__image" src="{{url_for('static',filename='assets/moon.jpg')}}"></li>
+                </ul> 
+        </div>
+            <button class="carousel_button carousel__b-r">
+              <img src="{{url_for('static',filename='assets/arrow-right.svg')}}"></button>
+            <div class="carousel__nav">
+              <button class="carousel__ind current-slide"></button>
+              <button class="carousel__ind"></button>
+              <button class="carousel__ind"></button>
+            </div>
+        </div>
+    </div>
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
