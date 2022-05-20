@@ -2,6 +2,42 @@
 
 {% block content %}
 
-<h1>This is the CPU page</h1>
+<div class="content">
+    <div class="title">
+      <h1>CPU</h1><button onclick="darkMode()">Dark Mode</button>
+    </div>
+    <div class="accord">
+      <div class="accordion-item">
+        <div class="accordion-item-h" onclick="aClick()">CPU</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c">
+            <p>CPU Cores-12<br> Threads-24<br>Max Boost Clock- 4.6GHz<br>Base Clock-3.8GHz<br>L1 Cache-768KB, L2 Cache-6MB, L3 Cache-64MB<br>Default TDP-105W<br>Unlocked for Overclocking-Yes<br>Max Operating Temperature-95°C<br>Launch Date-7/7/2019</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-h1" onclick="aClick1()">Install</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c"><a href="https://www.youtube.com/watch?v=ZiUivXAUsls" target="_blank">How to install</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">LEFT</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide slide-7 current-slide"></li>
+          <li class="carousel__slide slide-8"></li>
+          <li class="carousel__slide slide-9"></li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">RIGHT</button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
 
 {% endblock %}

@@ -2,6 +2,61 @@
 
 {% block content %}
 
-<h1>This is the RSPA page</h1>
+<div class="content">
+    <div class="title">
+      <h1>Ram Storage Power & Accesories</h1><button onclick="darkMode()">Dark Mode</button>
+    </div>
+    <div class="accord">
+      <div class="accordion-item">
+        <div class="accordion-item-h" onclick="aClick()">RSPA</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c">Ram!<br>
+            <p>Memory Size	16 GB-Memory Type	DDR4 <br>
+                Memory Speed-3600MHz Memory Size-16GB<br>
+                CAS Latency	18-22-22-42</p><br>Storage<br>
+                <p>Interface - NVMe (PCIe Gen 3 x4)-Capacity - 1TB <br>
+                    Form factor - M.2 (2280) <br>
+                    Sequential Read - 2,400 MB/s -
+                    Sequential Write - 1800 MB/s <br>
+                    SSD Endurance (TBW) - 300TB</p><br>Power<br>
+                    <p>Peak power (W)	1270<br>
+                        Modular Cable management	✓<br>
+                        Voltage (Vac)	100 - 240
+                        Frequency (Hz)	50 - 60<br>
+                        Average life time (h / 25°C)100,000- 
+                        Operating temperature up to 40°C</p><br>Accesories<br>
+                        <p>DeepCool GH-01 A-RGB GPU Stand Bracket- Form Factor	GPU Bracket<br>
+                            Case Colour	Black<br>
+                            Width	52.6 mm<br>
+                            Depth	60.6 mm<br>
+                            Height	163.73 ~ 267.63 mm<br>
+                            Weight	232 g</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-h1" onclick="aClick1()">RAM Lookie</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c"> <a href="https://www.youtube.com/watch?v=xhHlhaBEM1c" target="_blank">oooooo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">LEFT</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide slide-13 current-slide"></li>
+          <li class="carousel__slide slide-14"></li>
+          <li class="carousel__slide slide-15"></li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">RIGHT</button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
 
 {% endblock %}

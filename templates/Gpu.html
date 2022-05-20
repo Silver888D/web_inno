@@ -2,6 +2,58 @@
 
 {% block content %}
 
-<h1>This is the GPU page</h1>
+<div class="content">
+    <div class="title">
+      <h1>GPU</h1><button onclick="darkMode()">Dark Mode</button>
+    </div>
+    <div class="accord">
+      <div class="accordion-item">
+        <div class="accordion-item-h" onclick="aClick()">GPU</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c"><p>
+            Graphics Engine	AXRX 6700 XT 12GBD6-3DHLV2<br>
+            Video Memory	12GB GDDR6<br>
+            Stream Processor	2560 Units<br>
+            Engine Clock(OC)	up to 2424MHz(Game)
+            up to 2581MHz(Boost)<br>
+            Memory Clock	16.0 Gbps<br>
+            Memory Interface	192-bit<br>
+            DirectX® Support	12<br>
+            Bus Standard	PCIE 4.0 x16<br>
+            Standard Display Connectors	1 x HDMI 2.1 , 3 x DisplayPort 1.4<br>
+            Maximum Resolution
+            DisplayPort	7680×4320
+            HDMI	7680×4320<br>
+            Power Specs + Board Dimensions
+            Board Dimensions	305*132*50mm
+            Minimum System Power requirement (W)	650W
+            Extension Power Connector	Two 8-pin PCI Express Power connectors</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-h1" onclick="aClick1()">Performance</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c"> <a href="https://www.youtube.com/watch?v=UQS0d5lbXNo" target="_blank">Performance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">LEFT</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide slide-10 current-slide"></li>
+          <li class="carousel__slide slide-11"></li>
+          <li class="carousel__slide slide-12"></li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">RIGHT</button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
 
 {% endblock %}

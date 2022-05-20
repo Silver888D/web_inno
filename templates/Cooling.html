@@ -2,6 +2,41 @@
 
 {% block content %}
 
-<h1>This is the Cooling page</h1>
-
+<div class="content">
+    <div class="title">
+      <h1>Cooling</h1><button onclick="darkMode()">Dark Mode</button>
+    </div>
+    <div class="accord">
+      <div class="accordion-item">
+        <div class="accordion-item-h" onclick="aClick()">Cooling</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c">Brrr!<br>
+            <p>The 3900x is a high temp CPU so it's being cooled with a Corsair H100i 240ml AIO with 3 front intake fans (aerocool) moving 112 CFM at a Dbs of 20, one rear fan and two corsair LL120mm fans exhausting out the top.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-h1" onclick="aClick1()">Install</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c"> <a href="https://www.youtube.com/watch?v=FTg2kW3ObCs" target="_blank">How to install</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">LEFT</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide slide-4 current-slide"></li>
+          <li class="carousel__slide slide-5"></li>
+          <li class="carousel__slide slide-6"></li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">RIGHT</button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
 {% endblock %}

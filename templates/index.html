@@ -1,5 +1,46 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<div class="content">
+    <div class="title">
+      <h1>My PC</h1><button onclick="darkMode()">Dark Mode</button>
+    </div>
+    <div class="accord">
+      <div class="accordion-item">
+        <div class="accordion-item-h" onclick="aClick()">Welcome</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c">Hello!<br>
+            <p>Welcome to my website showcasing my PC, throughout this website you will find pictures, detailed
+              specification and tips/tricks for installing and using the parts involved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-h1" onclick="aClick1()">PC Quick Specs</div>
+        <div class="accordion-item-b">
+          <div class="accordion-item-b-c">Specs:<br>
+            <p>MSI B550M PRO-VDH WIFI<br>AMD Ryzen 9 3900x<br>Trident Z Royal 16GB 3600Mhz<br>Crucial P2 1TB<br>Corsair
+              H100i RGB Platinum SE<br>Powercolor RX6700XT 12GB Hellhound Spectral White<br>bequiet! Straight Power 11
+              1200w Platinum<br>Corsair 4000D Airflow White</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">LEFT</button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide slide-1 current-slide"></li>
+          <li class="carousel__slide slide-2"></li>
+          <li class="carousel__slide slide-3"></li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">RIGHT</button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
 {% endblock %}
+
