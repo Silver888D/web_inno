@@ -1,21 +1,31 @@
-html, body {margin: 0; padding: 0; min-height: 100%; width: 100%;}
+html, body {margin: 0; padding: 0; min-height: 100%; width: 100%; background-color: #eee;color: darkmagenta;}
 
 @media (max-width:500px) {
     html, body { margin: auto; padding: auto;}}
 
 .container {display: flex;flex-direction: row; min-height: 100% ; min-width: 100%;}
 
-.navbar{width:20%; min-height: 100vh;background-color: darkmagenta;}
+.navbar{width:20%; min-height: 100vh;}
+
+button{cursor: pointer;}
 
 ul{ list-style: none;}
 
-.content{display: flex; flex-direction: column; width:80%; background-color: darkgray}
+a:link {color: darkgray;text-decoration: none}
 
-.title{height: 10vh; text-align: center; background-color: darkmagenta;}
+a:active {color: darkgray;text-decoration: none}
+
+a:visited {color: darkgray;text-decoration: none}
+
+a:hover{color: rgb(199, 197, 197);text-decoration: none}
+
+.content{display: flex; flex-direction: column; width:80%;}
+
+.title{height: 10vh; text-align: center;}
 
 .accord{height: fit-content;width: 100%; border-radius: .5rem;box-shadow: 0 2px 5px rgba(0,0,0,0.25);}
 
-.accordion-item{height: fit-content;width: 100%;background-color: darkgray;border-radius: .5rem;box-shadow: 0 2px 5px rgba(0,0,0,0.25);}
+.accordion-item{height: fit-content;width: 100%;;border-radius: .5rem;box-shadow: 0 2px 5px rgba(0,0,0,0.25);}
 
 .accordion-item-h{padding: 0.5rem 3rem .5rem 1rem; min-height: 3.5rem; line-height: 1.25rem;font-weight: bold;display: flex; align-items: center; position: relative;cursor: pointer;}
 
@@ -79,20 +89,18 @@ ul{ list-style: none;}
 
 .carousel__button {position: absolute; top: 50%; transform: translateY(-50%); background: transparent; border: 0; cursor: pointer; z-index: 999;}
 
-.carousel__button--left {left: 10px;}
+.carousel__button--left { left: 10px;}
 
-.carousel__button--right {right: 10px;}
+.carousel__button--right { right: 10px;}
 
-.carousel__button img {width: 10px;}
+.carousel__button img {width: 20px;}
 
 .carousel__nav {display: flex; justify-content: center; align-items: center; padding: 10px 0; z-index: 999;}
 
 .carousel__indicator {border: 0; border-radius: 50%; width: 14px; height: 14px; background: black; margin: 0 8px; cursor: pointer; z-index: 999; transform: scale(0.4);}
 
-.carousel__indicator.current-slide {background-color: lightgrey; transform: scale(1);}
+.carousel__indicator.current-slide {transform: scale(1);}
 
 .is-hidden {opacity: 0.2; cursor: auto;}
 
-.dark-mode {background-color: darkmagenta; color: darkgray;}
-
-.dark-modeb {background-color: magenta;color: black;}
+.dark-mode {background-color: rgb(86, 1, 86); color: darkgray;}

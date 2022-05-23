@@ -6,6 +6,18 @@ my_view= Blueprint('my_view',__name__)
 def index():
     return render_template("index.html")
 
+@my_view.route("/index")
+def indexed():
+    return redirect(url_for("my_view.index"))
+
+@my_view.route("/home")
+def home():
+    return redirect(url_for("my_view.index"))
+
+@my_view.route("/PCOverview")
+def PCOverview():
+    return redirect(url_for("my_view.index"))
+
 @my_view.route("/Cooling")
 def cooling():
     return render_template("Cooling.html")
@@ -13,10 +25,6 @@ def cooling():
 @my_view.route("/Cpu")
 def cpu():
     return render_template("Cpu.html")
-
-@my_view.route("/admin")
-def admin():
-    return render_template("admin.html")
 
 @my_view.route("/Gpu")
 def gpu():

@@ -9,14 +9,14 @@
   <title>My PC</title>
 </head>
 
-<body onload="stateCheck()" class="container">
-  <div class="navbar">
+<body onload="stateCheck()" state="light" class="container">
+  <div class="navbar"><br><br><br>
     <nav>
       <ul>
-        <li><a href="{{ url_for('my_view.index')}}">PC Overview</a></li>
-        <li><a href="{{ url_for('my_view.cpu')}}">CPU</a></li>
-        <li><a href="{{ url_for('my_view.gpu')}}">GPU</a></li>
-        <li><a href="{{ url_for('my_view.cooling')}}">Cooling</a></li>
+        <li><a href="{{ url_for('my_view.index')}}">PC Overview</a></li><br><br><br>
+        <li><a href="{{ url_for('my_view.cpu')}}">CPU</a></li><br><br><br>
+        <li><a href="{{ url_for('my_view.gpu')}}">GPU</a></li><br><br><br>
+        <li><a href="{{ url_for('my_view.cooling')}}">Cooling</a></li><br><br><br>
         <li><a href="{{ url_for('my_view.rspa')}}">RAM, Storage, Power & Accessories</a></li>
       </ul>
       </nav>
